@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: instapy
+Version: 0.1.0
+Summary: Gray and sepia filter
+License: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Instapy: Grayscale and Sepia filter
+
+Package adds filters to images. It takes an image and converts it to a 3-dimensional numpy array with RGB channels.
+The package applies the filters: Grayscale or Sepia, to the selected image by using three different implementations: pure python, numpy or numba.
+
+## Versions of Dependencies
+Python 3.10.4
+Numpy 1.23.2
+Numba 0.56.2
+Pillow 9.2.0
+pytest 7.1.3
+
+## Installation
+Package can be installed through pip:
+```
+python3 -m pip install .
+```
+or
+```
+pip install .
+```
+
+## How to run the code?
+
+How to run the package:
+```
+python3 -m instapy <path_to_input_image.jgp> -o <path_to_save_image.png> -i <chosen_implementation> -g
+```
+or
+```
+instapy <args>
+```
+
+For more instructions such as what options the package has, type in:
+```
+instapy -h
+```
+or
+```
+instapy --help
+```
+This will prepare a list of flags on the terminal.
+
+## Testing (pytest)
+You can test the package by using pytest while being in this directory '../assignment3':
+```
+pytest -v test/test_[insert-implementation].py
+```

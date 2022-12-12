@@ -1,0 +1,7 @@
+;; Innlevering 2b
+;; Av: Alban Bajrami (albanba) og Atahan Caliskan (atahanc)
+;; ---------------------------------------------------------
+
+(load "huffman.scm")
+
+;;
